@@ -123,7 +123,9 @@ const ArticleProducts = ({ articleID }) => {
       icon: <FontAwesomeIcon icon={faAward} style={style} />,
     },
   ];
-  return (
+  return loading ? (
+    <Loader />
+  ) : (
     <div className={styles.container}>
       <div className={styles.sliderContainer}>
         {error && <span className="error-message">{errorMessage}</span>}

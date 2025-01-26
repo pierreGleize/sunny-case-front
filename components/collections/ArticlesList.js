@@ -1,11 +1,13 @@
 import React, { useState, useEffect } from "react";
 import ArticleCollections from "../commun/ArticleCollections";
 import styles from "../../styles/categories/ArticlesList.module.css";
+import Loader from "../loader/Loader";
 
 const ArticlesList = ({ category }) => {
   const [articlesData, setArticlesData] = useState([]);
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
 
   useEffect(() => {
     if (!category) return;
@@ -15,6 +17,7 @@ const ArticlesList = ({ category }) => {
 
   const fetchCategory = async () => {
     setError(false);
+    setLoading(true);
     try {
       const response = await fetch(
         `https://sunny-case-back.vercel.app/articles/${category}`
@@ -40,13 +43,18 @@ const ArticlesList = ({ category }) => {
       setErrorMessage(
         `Un problème est survenue lors votre tentative de connexion. Veuillez réessayer plus tard. ${error.message}`
       );
+    } finally {
+      setLoading(false);
     }
   };
 
   return (
     <div className={styles.gridContainer}>
       {error && <span className="error-message">{errorMessage}</span>}
-      {articlesData.length > 0 &&
+      {loading ? (
+        <Loader />
+      ) : (
+        articlesData.length > 0 &&
         articlesData.map(
           ({ name, product, category, price, images, description, _id }, i) => (
             <ArticleCollections
@@ -60,7 +68,8 @@ const ArticlesList = ({ category }) => {
               _id={_id}
             />
           )
-        )}
+        )
+      )}
     </div>
   );
 };
