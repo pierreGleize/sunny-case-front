@@ -1,7 +1,7 @@
 # Sunny Case 🌞
 Sunny Case est une application web de vente d'accessoires pour téléphones mobiles. Le site permet aux utilisateurs de naviguer à travers différentes catégories d'articles, de les ajouter à leur panier, de gérer les quantités, et de procéder à un paiement fictif. En plus de cela, les utilisateurs peuvent créer un compte, se connecter, et consulter un historique de leurs commandes. L'application a été inspirée du design de [Burga](https://burga.fr/), et toutes les images utilisées proviennent de ce site.
 
-## 🌟 Foncionnalités 
+## 🌟 Fonctionnalités 
 - 🔐 Création de compte et connexion sécurisée : Les utilisateurs peuvent créer un compte, se connecter et accéder à leurs informations personnelles.
 - 🛒 Gestion du panier : Ajoutez des articles au panier, gérez les quantités, et vérifiez le prix total.
 - 📦 Sélection du mode de livraison et paiement : Choisissez un mode de livraison et un moyen de paiement (fictif pour la démo).
