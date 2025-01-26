@@ -12,11 +12,13 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import { useDispatch } from "react-redux";
 import { addItem, openCartModal } from "../../reducers/cart";
+import Loader from "../loader/Loader";
 
 const ArticleProducts = ({ articleID }) => {
   const [article, setArticle] = useState({});
   const [error, setError] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [loading, setLoading] = useState(false);
   const sliderRef = useRef(null);
 
   const dispatch = useDispatch();
@@ -29,6 +31,7 @@ const ArticleProducts = ({ articleID }) => {
 
   const fetchArticle = async () => {
     setError(false);
+    setLoading(true);
     try {
       const response = await fetch(
         `https://sunny-case-back.vercel.app/articles/articleID/${articleID}`
@@ -52,6 +55,8 @@ const ArticleProducts = ({ articleID }) => {
       setErrorMessage(
         `Un problème est survenue lors du chargement de l'article. Veuillez réessayer plus tard. ${error.message}`
       );
+    } finally {
+      setLoading(false);
     }
   };
   const handleDotHover = (index) => {
