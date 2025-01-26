@@ -1,0 +1,32 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    border: 1px solid grey;
+    min-height: 50px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+}
+.visible {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.title {
+    font-weight: 600;
+    user-select: none;
+}
+
+.content {
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+    overflow: hidden; 
+}
+
+.content.active {
+    max-height: 500px; 
+    opacity: 1;
+}
+

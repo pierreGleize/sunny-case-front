@@ -1,0 +1,70 @@
+.container {
+    display: flex;
+    height: 80vh;
+}
+.title {
+    text-align: center;
+    margin-bottom: 2rem;
+    font-weight: 500;
+}
+.signin {
+    background-color: #F7F6F2 ;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.signup {
+    background-color: #E8DFD3;
+    width: 100%;
+    padding: 0 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.label {
+    font-size: 16px;
+    color: black;
+    margin-bottom: 1rem;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input {
+    margin-top: 0.5rem;
+    padding: 12px;
+    border: 1px solid black;
+    font-size: 14px;
+    width: 100%;
+    background-color: transparent;
+  }
+
+  .btnSubmit {
+    width: 100%;
+    color: white;
+    background-color: black;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: 500;
+    margin-top: 2rem;
+    cursor: pointer;
+    border: none;
+  }
+  
+  @media (max-width: 790px) {
+    .container {
+        flex-direction: column;
+        height: auto;
+    }
+    .signin {
+        padding: 2rem 10%;
+    }
+    
+    .signup {
+        padding: 2rem 10%;
+    }
+    
+  }

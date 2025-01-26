@@ -1,0 +1,36 @@
+.container {
+    border: 1px solid rgb(209, 209, 209);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    max-width: 350px;
+    max-height: 450px;
+    text-align: center;
+    background-color: #fff;
+    padding: 20px 0;
+    cursor: pointer;
+  }
+  
+  .image {
+    width: 90%;
+  }
+  
+  .container span {
+    margin: 10px 0;
+    color: grey;
+  }
+  
+  .priceContainer {
+    position: relative;
+    width: 100%;
+  }
+  
+  .bagCheck {
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%); 
+    width: 25px;
+  }
+  

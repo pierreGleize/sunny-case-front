@@ -1,0 +1,93 @@
+.headerContainer {
+    width: 100%;
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 11;
+}
+
+.messageBar {
+    color: white;
+    font-size: 0.8rem;
+    font-weight: 600;
+    height: 5vh;
+    background-color: black;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.headerWrap {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: 100%;
+    padding-bottom: 15px;
+}
+.titleContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2%;
+    margin: 1.5rem 0;
+}
+
+.titleContainer h1 {
+    cursor: "pointer";
+     color: "black" ;
+     font-family: "Exo 2", serif;
+}
+.iconRight {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.icon {
+    font-size: 25px;
+    margin: 0 1rem;
+    cursor: pointer;
+}
+
+.articlesCount {
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    list-style: none;
+    padding : 0 10px;   
+}
+
+.navbarItem {
+    color: black;
+    cursor: pointer;
+    font-weight: 600;
+    margin: 0 10px;
+    font-size: 0.9em;
+}
+@media (max-width: 1285px){
+    .navbarItem {
+   font-size: 12px;
+    }
+  }
+@media (max-width: 950px){
+    .navbarItem {
+   font-size: 10px;
+    }
+  }
+
+  @media (max-width: 790px) {
+    .headerWrap{
+        display: block;
+        margin-top: 1rem;
+    }
+    .headerContainer {
+        margin-bottom: 1rem;
+    }
+    .titleContainer {
+        margin: 0.5rem 0;
+    }
+  }

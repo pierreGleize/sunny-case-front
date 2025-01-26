@@ -1,0 +1,35 @@
+.cartContainer {
+    width: 100%;
+    background-color: #F5F5F5;
+    padding: 1.5rem  15% 1.5rem  1.5rem ;
+}
+
+.delevery{
+    color: #4D7A50;
+    display: flex;
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.articlesList {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.priceDetails {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.priceDetails h3 {
+    font-weight: 600;
+}
+
+@media (max-width: 1200px) {
+    .cartContainer {
+        padding: 1.5rem ;
+    }
+}

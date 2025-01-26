@@ -1,0 +1,25 @@
+.container {
+    background-color: #F5F5F5;
+    padding: 3rem 10rem;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 3rem;
+}
+
+.btn {
+    border: none;
+    background-color: transparent;
+    text-decoration: underline;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+@media (max-width: 790px) {
+    .container {
+        padding: 3rem 4rem;
+    }
+}

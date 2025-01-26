@@ -1,0 +1,35 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 20% ;
+    margin-bottom: 3rem;
+    gap: 1rem;
+}
+
+.image {
+    width: 120px;
+}
+
+.containerStars{
+    display: flex;
+}
+.text{
+    text-align: center;
+}
+.notes{
+    margin-left: 1rem;
+}
+
+@media (min-width: 1534px){
+    .container{
+        padding: 0 30%;
+    }
+}
+
+@media (max-width: 790px) {
+    .container{
+        padding: 0 12%;
+    }
+}

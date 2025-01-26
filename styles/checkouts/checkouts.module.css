@@ -1,0 +1,26 @@
+.container {
+    background-color: white;
+}
+
+.header {
+    border-bottom: 1px solid grey;
+    display: flex;
+    align-items: center;
+    height: 13vh;
+    padding: 0 10%
+}
+
+.main {
+    display: flex;
+    justify-content: center;
+}
+
+.header h1 {
+    font-family: "Exo 2", serif;
+}
+
+@media (max-width: 790px) {
+    .main {
+        flex-direction: column-reverse;
+    }
+}

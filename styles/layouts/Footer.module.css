@@ -1,0 +1,65 @@
+.container{
+    padding: 3rem 0;
+}
+
+.titleContainerMobile h2 , .titleContainer h2 {
+    font-family: "Exo 2", serif;
+}
+
+.wrapper{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3rem;
+    margin-bottom: 3rem;
+    width: 70%;
+}
+
+.productList{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 25px;
+}
+.category {
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.socialMedia {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.media {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 600;
+    font-size: 0.8em;
+}
+.media p {
+    margin: 0 5px;
+}
+.media span {
+    color: grey;
+}
+.legalNotices{
+    margin-left: 3rem;
+    text-align: left;
+    color: grey;
+}
+.legalNotices a {
+    color: grey;
+}
+.titleContainerMobile {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+@media (max-width : 790px) {
+    .wrapper {
+        width: 100%;
+        justify-content: space-around;
+        margin-left: 0;
+    }
+}

@@ -1,0 +1,58 @@
+.container {}
+.container h1{
+    font-weight: 500;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.ordersContainer {
+    padding: 0 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.order {
+   margin-bottom: 2rem;
+    background-color: #F7F6F2;
+   padding: 2rem;
+   width: 780px;
+}
+
+.orderDetails {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+.popHoverContent {
+    display: flex;
+    flex-direction: column;
+}
+
+.orderDetails p {
+    margin-bottom: 5px;
+}
+
+.bold{
+    font-weight: 600;
+}
+
+.article{
+    margin-bottom: 1rem;
+}
+
+@media (max-width: 790px) {
+    .orderDetails {
+        display: block;
+    }
+    .order {
+       width: 100%;
+    }
+
+}
+
+@media (max-width: 550px) {
+    .orderDetails p {
+        display: flex;
+        flex-direction: column;
+    }
+}

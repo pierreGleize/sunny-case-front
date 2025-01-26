@@ -1,0 +1,86 @@
+.container{
+    padding: 0 10%;
+    margin-bottom: 3rem;
+}
+.mugImage {
+    width: 100%;
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+.imagesTop {
+    width: 100%;
+}
+
+.gridTop {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+
+.gridBottom {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 15px;
+    margin-bottom: 1rem;
+}
+.imageBottom{
+    width: 100%;
+}
+.selectImage {
+    position: absolute;
+    bottom: 10%;
+    left: 20%;
+    right: 20%;
+    text-align: center;
+}
+.selectText {
+    color: white;
+    font-weight: 900;
+    font-size: 1.5em;
+    margin-bottom: 1rem;
+}
+
+.selectBtn {
+    color: white;
+    padding: 10px;
+    border: 1px solid white;
+    background-color: transparent;
+    font-size: 1em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+@media (max-width: 1350px) {
+    .selectText {
+        font-size: 1em;
+    }
+    .selectBtn {
+        font-size: 0.7em;
+    }
+}
+
+@media (max-width: 930px) {
+    .selectText {
+        font-size: 0.8em;
+    }
+}
+
+@media (max-width: 790px) {
+    .container{
+        padding: 0;
+    }
+    .gridBottom {
+        grid-template-columns: 1fr 1fr; 
+    }
+    .selectText {
+        font-size: 1.5em;
+    }
+    .selectBtn {
+        font-size: 1em;
+    }
+}
+
+  
