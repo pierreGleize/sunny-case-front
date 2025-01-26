@@ -16,7 +16,7 @@
     margin-bottom: 2rem;
     background-color: #F7F6F2;
    padding: 6rem 2rem 2rem 2rem;
-   width: 780px;
+   width: 730px;
     position: relative;
     display: flex;
     flex-direction: column;
@@ -57,4 +57,10 @@
     user-select: none;
     background-color: #008000;
     color: white;
+}
+
+@media(max-width: 790px) {
+    .addressContainer {
+        width: 100%;
+    }
 }
